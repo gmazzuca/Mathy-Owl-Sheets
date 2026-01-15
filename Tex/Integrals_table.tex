@@ -1,0 +1,47 @@
+% Integrals_table.tex
+% Basic integrals table
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+
+\begin{document}
+
+\begin{center}
+      \LARGE Basic Integrals \\[1ex]
+      \normalsize (indefinite integrals, constant of integration $+C$ omitted)
+\end{center}
+
+\begin{table}[ht]
+\centering
+\caption{Common indefinite integrals}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+\toprule
+Integrand & Antiderivative \\ 
+\midrule
+$\displaystyle x^n,\quad n\neq -1$ & $\displaystyle \frac{x^{n+1}}{n+1} + C$ \\[6pt]
+$\displaystyle \frac{1}{x}$ & $\displaystyle \ln|x| + C$ \\[6pt]
+$\displaystyle e^{ax}$ & $\displaystyle \frac{1}{a}e^{ax} + C\quad (a\neq0)$ \\[6pt]
+$\displaystyle a^{x}$ & $\displaystyle \frac{a^{x}}{\ln a} + C\quad (a>0,\;a\neq1)$ \\[6pt]
+$\displaystyle \sin x$ & $\displaystyle -\cos x + C$ \\[6pt]
+$\displaystyle \cos x$ & $\displaystyle \sin x + C$ \\[6pt]
+$\displaystyle \tan x$ & $\displaystyle -\ln|\cos x| + C$ \\[6pt]
+$\displaystyle \cot x$ & $\displaystyle \ln|\sin x| + C$ \\[6pt]
+$\displaystyle \sec^2 x$ & $\displaystyle \tan x + C$ \\[6pt]
+$\displaystyle \csc^2 x$ & $\displaystyle -\cot x + C$ \\[6pt]
+$\displaystyle \sec x\tan x$ & $\displaystyle \sec x + C$ \\[6pt]
+$\displaystyle \csc x\cot x$ & $\displaystyle -\csc x + C$ \\[6pt]
+$\displaystyle \sin^2 x$ & $\displaystyle \frac{x}{2}-\frac{\sin(2x)}{4} + C$ \\[6pt]
+$\displaystyle \cos^2 x$ & $\displaystyle \frac{x}{2}+\frac{\sin(2x)}{4} + C$ \\[6pt]
+$\displaystyle \frac{1}{x^2+a^2}$ & $\displaystyle \frac{1}{a}\arctan\!\frac{x}{a} + C\quad (a>0)$ \\[6pt]
+$\displaystyle \frac{1}{\sqrt{a^2-x^2}}$ & $\displaystyle \arcsin\!\frac{x}{a} + C\quad (|x|<a)$ \\[6pt]
+$\displaystyle \frac{1}{a^2-x^2}$ & $\displaystyle \frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right| + C\quad (a\neq0)$ \\[6pt]
+$\displaystyle \frac{1}{\sqrt{x^2+a^2}}$ & $\displaystyle \ln\!\bigl|x+\sqrt{x^2+a^2}\,\bigr| + C$ \\[6pt]
+
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
